@@ -21,7 +21,7 @@ export default function App() {
   const [isAdminOpen, setIsAdminOpen] = useState(false);
 
   useEffect(() => {
-    if (window.location.pathname === '/admin') {
+    if ((window.location.pathname.includes('admin') || window.location.hash.includes('admin'))) {
       setIsAdminOpen(true);
     }
   }, []);
