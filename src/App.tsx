@@ -204,7 +204,7 @@ export default function App() {
           <button
             id="tab-culinary-engine"
             onClick={() => handleTabChange('cuisine')}
-            className={`px-3 py-1.5 text-[10px] font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
+            className={`px-3 py-1.5 text-xs font-semibold tracking-wider font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
               activeTab === 'cuisine'
                 ? 'bg-[#FF3366] text-white border-[#FF3366] shadow-[0_0_18px_rgba(255,51,102,0.45)]'
                 : 'text-neutral-400 hover:text-white border-transparent hover:border-white/10'
@@ -220,7 +220,7 @@ export default function App() {
           <button
             id="tab-asymmetric-drops"
             onClick={() => handleTabChange('drops')}
-            className={`px-3 py-1.5 text-[10px] font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
+            className={`px-3 py-1.5 text-xs font-semibold tracking-wider font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
               activeTab === 'drops'
                 ? 'bg-[#FF3366] text-white border-[#FF3366] shadow-[0_0_18px_rgba(255,51,102,0.45)]'
                 : 'text-neutral-400 hover:text-white border-transparent hover:border-white/10'
@@ -236,7 +236,7 @@ export default function App() {
           <button
             id="tab-logistics-matrix"
             onClick={() => handleTabChange('logistics')}
-            className={`px-3 py-1.5 text-[10px] font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
+            className={`px-3 py-1.5 text-xs font-semibold tracking-wider font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
               activeTab === 'logistics'
                 ? 'bg-[#FF3366] text-white border-[#FF3366] shadow-[0_0_18px_rgba(255,51,102,0.45)]'
                 : 'text-neutral-400 hover:text-white border-transparent hover:border-white/10'
@@ -252,7 +252,7 @@ export default function App() {
           <button
             id="tab-checkout-cro"
             onClick={() => handleTabChange('checkout')}
-            className={`px-3 py-1.5 text-[10px] font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
+            className={`px-3 py-1.5 text-xs font-semibold tracking-wider font-mono tracking-widest transition-all duration-300 uppercase flex items-center gap-1.5 font-bold cursor-pointer relative border ${
               activeTab === 'checkout'
                 ? 'bg-[#FF3366] text-white border-[#FF3366] shadow-[0_0_20px_rgba(255,51,102,0.5)]'
                 : 'text-neutral-400 hover:text-[#FF3366] border-transparent hover:border-white/10'
@@ -299,7 +299,7 @@ export default function App() {
                 LANE 01 // OVERDRIVE
               </span>
               <div className="h-0.5 w-16 bg-gradient-to-r from-[#FF3366]/30 to-transparent" />
-              <span className="text-[10px] text-neutral-500 font-mono tracking-wide uppercase">
+              <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono tracking-wide uppercase">
                 HIGH-TEMPERATURE SEARING OUTLET // EST 2026
               </span>
             </div>
@@ -338,7 +338,7 @@ export default function App() {
 
                 <div className="flex justify-between items-center relative z-20">
                   <div className="space-y-0.5">
-                    <span className="text-[10px] tracking-widest text-white/70 font-mono block">
+                    <span className="text-xs font-semibold tracking-wider tracking-widest text-white/70 font-mono block">
                       {isInitializing ? 'CALCULATING HANDSHAKE...' : '01 // VECTOR FLOW'}
                     </span>
                     <span className="font-display font-black text-lg md:text-xl tracking-tight uppercase flex items-center gap-2">
@@ -358,7 +358,7 @@ export default function App() {
               </button>
 
               {/* Micro Live metrics wait time line inside CTA bounding block */}
-              <div className="flex justify-between items-center text-[11px] font-mono tracking-wider px-2">
+              <div className="flex justify-between items-center text-xs font-semibold font-mono tracking-wider px-2">
                 <div className="flex items-center gap-2">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="text-neutral-500 uppercase">EST. WAIT TIME</span>
@@ -372,7 +372,7 @@ export default function App() {
             </div>
 
             {/* TELEMETRY READOUT / TERMINAL FLOW */}
-            <div className="bg-[#111111]/80 border border-white/5 p-4 rounded-none font-mono text-[10px] space-y-1 text-neutral-400 mt-2 max-w-lg relative block overflow-hidden">
+            <div className="bg-[#111111]/80 border border-white/5 p-4 rounded-none font-mono text-xs font-semibold tracking-wider space-y-1 text-neutral-400 mt-2 max-w-lg relative block overflow-hidden">
               <div className="absolute top-2 right-2 flex items-center gap-1.5 text-neutral-600">
                 <Cpu className="w-3 h-3 text-[#FF3366]" />
                 <span>DIAG_PORT</span>
@@ -399,7 +399,7 @@ export default function App() {
                 </div>
                 <span className="text-[#FF3366] self-center">{config.boostPreset} SPICE</span>
               </div>
-              <div className="flex justify-between items-center text-[10px] border-t border-white/5 pt-1.5">
+              <div className="flex justify-between items-center text-xs font-semibold tracking-wider border-t border-white/5 pt-1.5">
                 <span>[CALCULATED PRICE]</span>
                 <motion.span 
                   key={getTotalPrice()}
@@ -436,14 +436,14 @@ export default function App() {
                     {/* Header for food engine select */}
                     <div className="flex justify-between items-end">
                       <div>
-                        <span className="text-[10px] text-neutral-500 font-mono tracking-widest block">
+                        <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono tracking-widest block">
                           CRAV_ENGINE v1.02
                         </span>
                         <h2 className="font-display font-medium text-xs tracking-widest text-[#FF3366] uppercase">
                           CARGO MENU SELECTION // LOAD VEHICLE
                         </h2>
                       </div>
-                      <span className="text-[10px] font-mono text-neutral-400">
+                      <span className="text-xs font-semibold tracking-wider font-mono text-neutral-400">
                         {selectedItems.length} OF {MENU_ITEMS.length} ENGINES LOADED
                       </span>
                     </div>
@@ -565,7 +565,7 @@ export default function App() {
               </div>
 
               {/* Step indicator sequence */}
-              <div className="bg-[#111111] border border-white/5 p-4 text-left space-y-1.5 font-mono text-[11px] text-neutral-400">
+              <div className="bg-[#111111] border border-white/5 p-4 text-left space-y-1.5 font-mono text-xs font-semibold text-neutral-400">
                 <div className="flex items-center gap-2">
                   <span className={initStep >= 0 ? "text-[#FF3366]" : "text-neutral-700"}>
                     {initStep > 0 ? "✓" : "▶"}
@@ -639,7 +639,7 @@ export default function App() {
                   RESERVATION KEY: MDN-{Math.floor(100000 + Math.random() * 900000)}
                 </span>
                 {syncedVehicle && (
-                  <span className="text-[10px] bg-[#00FF66]/10 border border-[#00FF66]/20 text-[#00FF66] px-2 py-0.5 tracking-wider font-mono uppercase inline-block mt-1">
+                  <span className="text-xs font-semibold tracking-wider bg-[#00FF66]/10 border border-[#00FF66]/20 text-[#00FF66] px-2 py-0.5 tracking-wider font-mono uppercase inline-block mt-1">
                     VEHICLE: {syncedVehicle.plate} [{syncedVehicle.type}]
                   </span>
                 )}
@@ -647,7 +647,7 @@ export default function App() {
 
               {/* Invoice Table elements */}
               <div className="py-4 space-y-3 font-mono text-xs">
-                <div className="text-neutral-500 border-b border-white/5 pb-1 uppercase text-[10px]">
+                <div className="text-neutral-500 border-b border-white/5 pb-1 uppercase text-xs font-semibold tracking-wider">
                   PROVISION REPORT:
                 </div>
                 
@@ -699,13 +699,13 @@ export default function App() {
               {/* ETA Display Box */}
               <div className="bg-[#151213] border border-[#FF3366]/20 p-3 rounded-none flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] text-neutral-500 font-mono block">EXPRESS TERMINATION WAIT:</span>
+                  <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono block">EXPRESS TERMINATION WAIT:</span>
                   <span className="font-display font-black text-white text-lg tracking-tight">
                     {metrics.liveWaitMinutes} MINS
                   </span>
                 </div>
                 <div className="text-right">
-                  <span className="text-[10px] text-neutral-500 font-mono block">APEX APERTURE:</span>
+                  <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono block">APEX APERTURE:</span>
                   <span className="font-mono text-emerald-500 font-bold block text-sm">
                     LANE 01 // OVERDRIVE
                   </span>
@@ -757,7 +757,7 @@ export default function App() {
           id="mobile-sticky-initialize-btn"
           onClick={handleTriggerExpressLane}
           disabled={isInitializing}
-          className="group relative px-4 py-2.5 bg-gradient-to-r from-[#FF3366] to-[#E62255] cursor-pointer text-white font-mono font-bold text-xs tracking-widest uppercase shadow-[0_4px_15px_rgba(255,51,102,0.35)] active:scale-95 transition-all outline-none border-none flex items-center gap-1.5 select-none"
+          className="group relative px-5 py-3 min-h-[44px].5 bg-gradient-to-r from-[#FF3366] to-[#E62255] cursor-pointer text-white font-mono font-bold text-base font-semibold min-h-[44px] tracking-widest uppercase shadow-[0_4px_15px_rgba(255,51,102,0.35)] active:scale-95 transition-all outline-none border-none flex items-center gap-1.5 select-none"
         >
           <span className="absolute inset-[2px] border border-white/0 group-hover:border-white/20 transition-all pointer-events-none" />
           <span>{isInitializing ? 'INITIALIZING...' : 'INITIALIZE'}</span>
@@ -772,7 +772,7 @@ export default function App() {
         
         {/* Infinite CSS marquee loop using flex and animation */}
         <div className="flex select-none overflow-hidden max-w-full">
-          <div className="animate-marquee whitespace-nowrap flex gap-12 text-[10px] uppercase font-mono tracking-widest text-neutral-500">
+          <div className="animate-marquee whitespace-nowrap flex gap-12 text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-neutral-500">
             {/* Iterated twice so there is no visual gap in horizontal flow */}
             {[...TELEMETRY_FEED, ...TELEMETRY_FEED, ...TELEMETRY_FEED].map((feed, index) => (
               <span key={index} className="flex items-center gap-3">

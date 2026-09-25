@@ -62,10 +62,10 @@ export default function CrossSellPanel({
     <div className="space-y-4 select-none">
       <div className="flex items-center justify-between border-b border-white/5 pb-2.5">
         <div>
-          <span className="font-mono text-[10px] text-neutral-400 tracking-wider block uppercase font-bold">
+          <span className="font-mono text-xs font-semibold tracking-wider text-neutral-400 tracking-wider block uppercase font-bold">
             03 // ENHANCE THE PROFILE
           </span>
-          <span className="font-sans text-[11px] text-neutral-500 block leading-tight mt-0.5">
+          <span className="font-sans text-xs font-semibold text-neutral-500 block leading-tight mt-0.5">
             Activate elite culinary pairing upgrades below. Highly recommended for premium vehicle handshakes.
           </span>
         </div>
@@ -108,7 +108,7 @@ export default function CrossSellPanel({
             CHILI CRISP INFUSION CR-03
           </h4>
 
-          <p className="text-[10px] text-neutral-400 font-sans leading-snug">
+          <p className="text-xs font-semibold tracking-wider text-neutral-400 font-sans leading-snug">
             High-octane x-press crisp infusion containing toasted shallots, Sichuan peppercorn sediment, and custom oil extraction.
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function CrossSellPanel({
         <div className="sm:text-right mt-3 sm:mt-0 pt-3 sm:pt-0 border-t sm:border-t-0 border-white/5 flex sm:flex-col justify-between items-baseline sm:items-end shrink-0 select-none relative z-10">
           <span className="text-[9px] font-mono text-neutral-500 uppercase block">RECOMMENDED</span>
           <span className="font-mono text-sm font-black text-[#FF3366] block">
-            +¥28 <span className="text-[10px] text-neutral-500 font-normal">($4.00)</span>
+            +¥28 <span className="text-xs font-semibold tracking-wider text-neutral-500 font-normal">($4.00)</span>
           </span>
         </div>
       </div>
@@ -157,7 +157,7 @@ export default function CrossSellPanel({
             VINTAGE PU-ERH TEA PAIRING
           </h4>
 
-          <p className="text-[10px] text-neutral-400 font-sans leading-snug">
+          <p className="text-xs font-semibold tracking-wider text-neutral-400 font-sans leading-snug">
             Earth-steeped vintage post-fermented deep red tea. Counterbalances massive wok spice intensity and cleanses grease.
           </p>
         </div>
@@ -165,7 +165,7 @@ export default function CrossSellPanel({
         <div className="sm:text-right mt-3 sm:mt-0 pt-3 sm:pt-0 border-t sm:border-t-0 border-white/5 flex sm:flex-col justify-between items-baseline sm:items-end shrink-0 select-none relative z-10">
           <span className="text-[9px] font-mono text-neutral-500 uppercase block">SOMMELIER SPEC</span>
           <span className="font-mono text-sm font-black text-[#FF3366] block">
-            +¥63 <span className="text-[10px] text-neutral-500 font-normal">($9.00)</span>
+            +¥63 <span className="text-xs font-semibold tracking-wider text-neutral-500 font-normal">($9.00)</span>
           </span>
         </div>
       </div>

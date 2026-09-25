@@ -84,7 +84,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
         <div>
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00FF66] animate-pulse" />
-            <span className="font-mono text-[10px] tracking-widest text-[#00FF66] font-extrabold uppercase">
+            <span className="font-mono text-xs font-semibold tracking-wider tracking-widest text-[#00FF66] font-extrabold uppercase">
               EXPRESS LANE // TELEMETRY DIRECTORY
             </span>
           </div>
@@ -110,7 +110,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
         {/* LEFT COLUMN: Data Ingestion */}
         <div id="logistics-left-column" className="space-y-6">
           <div>
-            <span className="text-[10px] text-neutral-400 font-mono tracking-widest block mb-1">
+            <span className="text-xs font-semibold tracking-wider text-neutral-400 font-mono tracking-widest block mb-1">
               01 // PLATE RECOGNITION SYSTEM
             </span>
             <h3 className="font-display font-medium text-xs text-white uppercase tracking-wider mb-3">
@@ -180,7 +180,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00FF66]"></span>
             </span>
 
-            <span className="text-[10px] text-neutral-500 font-mono tracking-widest block uppercase">
+            <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono tracking-widest block uppercase">
               ESTIMATED ARRIVAL WINDOW
             </span>
             <div className="flex items-baseline gap-2 mt-2">
@@ -192,7 +192,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
               </span>
             </div>
             
-            <p className="text-[10px] text-neutral-400 font-mono mt-1 leading-normal">
+            <p className="text-xs font-semibold tracking-wider text-neutral-400 font-mono mt-1 leading-normal">
               PREPARATION INDEX ALIGNS PRECISELY WITH YOUR VEHICLE PROFILE STALL ESTIMATION. DO NOT ARRIVE BEYOND THIS SPAN to preserve heat intensity.
             </p>
           </div>
@@ -200,7 +200,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
           {/* Industrial-style linear stepper tracking PREPARATION PIPELINE */}
           <div className="space-y-3">
             <div className="flex justify-between items-center text-xs">
-              <span className="text-[10px] text-neutral-500 font-mono tracking-widest block uppercase">
+              <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono tracking-widest block uppercase">
                 PREPARATION PIPELINE
               </span>
               <span className="font-mono text-[9px] text-[#00FF66] font-bold">
@@ -252,7 +252,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
                       }`}>
                         {s.label}
                       </h4>
-                      <p className={`text-[10px] leading-relaxed transition-colors duration-300 ${
+                      <p className={`text-xs font-semibold tracking-wider leading-relaxed transition-colors duration-300 ${
                         isActive ? 'text-neutral-400' : 'text-neutral-800'
                       }`}>
                         {s.desc}
@@ -264,7 +264,7 @@ export default function ExpressLogistics({ initialWaitMin = 4.2, onSyncComplete 
             </div>
           </div>
 
-          <div className="bg-[#151515] border border-[#222] p-3 text-[10px] font-mono text-neutral-500 flex justify-between items-center">
+          <div className="bg-[#151515] border border-[#222] p-3 text-xs font-semibold tracking-wider font-mono text-neutral-500 flex justify-between items-center">
             <span className="flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5 text-[#00FF66]" />
               AUTHENTICATION ENCRYPTED AES-256

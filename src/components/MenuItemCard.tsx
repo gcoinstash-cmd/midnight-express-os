@@ -89,11 +89,11 @@ export default function MenuItemCard({ item, isSelected, onSelect }: MenuItemCar
             <h4 className="font-display font-bold text-sm tracking-tight text-white group-hover:text-[#FF3366] transition-colors">
               {item.name}
             </h4>
-            <span className="text-[10px] bg-white/5 text-neutral-400 px-1.5 py-0.5 tracking-tight font-mono">
+            <span className="text-xs font-semibold tracking-wider bg-white/5 text-neutral-400 px-1.5 py-0.5 tracking-tight font-mono">
               {item.chineseName}
             </span>
           </div>
-          <p className="text-[11px] text-neutral-400 tracking-normal mt-1 leading-relaxed line-clamp-2 md:line-clamp-none">
+          <p className="text-xs font-semibold text-neutral-400 tracking-normal mt-1 leading-relaxed line-clamp-2 md:line-clamp-none">
             {item.description}
           </p>
         </div>
@@ -108,7 +108,7 @@ export default function MenuItemCard({ item, isSelected, onSelect }: MenuItemCar
         </div>
       </div>
 
-      <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-neutral-500">
+      <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between text-xs font-semibold tracking-wider font-mono text-neutral-500">
         <div className="flex items-center gap-1.5">
           <span>SPICE LEVEL:</span>
           <span className="flex gap-0.5">

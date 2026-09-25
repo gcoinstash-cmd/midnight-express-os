@@ -34,7 +34,7 @@ export default function AudioEngineControl({
       <button
         id="audio-toggle-btn"
         onClick={onToggleAudio}
-        className={`p-1.5 transition-all duration-300 border flex items-center gap-1.5 text-[10px] font-mono tracking-tighter cursor-pointer ${
+        className={`p-1.5 transition-all duration-300 border flex items-center gap-1.5 text-xs font-semibold tracking-wider font-mono tracking-tighter cursor-pointer ${
           audioEnabled
             ? 'border-[#FF3366] text-[#FF3366] bg-[#FF3366]/5 shadow-[0_0_8px_rgba(255,51,102,0.15)]'
             : 'border-white/5 text-neutral-500 hover:text-white hover:border-white/10'

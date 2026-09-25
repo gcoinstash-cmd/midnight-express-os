@@ -50,7 +50,7 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
         </div>
 
         {/* 1. HORIZONTAL FILTER BAR OF RAW TEXT TRIGGERS SEPARATED BY MINIMAL SLASHES */}
-        <div className="flex items-center gap-2 font-mono text-[10px] tracking-widest text-neutral-400">
+        <div className="flex items-center gap-2 font-mono text-xs font-semibold tracking-wider tracking-widest text-neutral-400">
           {(['ALL', 'SEARED', 'INFUSED', 'STEAMED'] as MenuFilter[]).map((filter, index, array) => (
             <React.Fragment key={filter}>
               <button
@@ -122,13 +122,13 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
                     <span className="text-xs font-mono text-neutral-400 font-bold">夜間川味煙燻牛胸</span>
                     <span className="h-[1px] flex-1 bg-gradient-to-r from-neutral-800 to-transparent" />
                     <span className="font-mono text-lg font-black text-[#FF3366] tracking-wider animate-pulse">
-                      ¥260 <span className="text-[10px] text-neutral-500 font-normal">($38.00)</span>
+                      ¥260 <span className="text-xs font-semibold tracking-wider text-neutral-500 font-normal">($38.00)</span>
                     </span>
                   </div>
                 </div>
 
                 {/* Monospace Ingredient Block */}
-                <div className="bg-black/50 border border-white/5 p-3.5 space-y-2 font-mono text-[10px] text-neutral-400 leading-normal">
+                <div className="bg-black/50 border border-white/5 p-3.5 space-y-2 font-mono text-xs font-semibold tracking-wider text-neutral-400 leading-normal">
                   <div className="flex justify-between items-center text-[#FF3366] text-[8px] font-bold border-b border-white/5 pb-1">
                     <span>INGREDIENTS REGISTERED SPEC:</span>
                     <span>320°C FLASH SEAR ACTIVE</span>
@@ -143,11 +143,11 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
 
                 {/* Action button inside drop */}
                 <div className="pt-2 flex justify-between items-center text-xs">
-                  <span className="font-mono text-neutral-500 text-[10px] uppercase">
+                  <span className="font-mono text-neutral-500 text-xs font-semibold tracking-wider uppercase">
                     EST. PREPARATION DURATION: <span className="text-[#FF3366] font-bold">240 SECONDS</span>
                   </span>
                   
-                  <span className="font-mono text-[10px] font-bold text-white group-hover:text-[#FF3366] transition-colors flex items-center gap-1.5">
+                  <span className="font-mono text-xs font-semibold tracking-wider font-bold text-white group-hover:text-[#FF3366] transition-colors flex items-center gap-1.5">
                     {activeSelections.includes('szechuan-brisket') ? 'ACTIVE / DISCHARGE CYLINDER' : 'LOAD WOK CHASSIS'}
                     <span className="w-1.5 h-1.5 bg-[#FF3366] rounded-full inline-block animate-pulse" />
                   </span>
@@ -170,7 +170,7 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
 
                 {szechuanError ? (
                   <div className="absolute inset-0 bg-neutral-950 border border-[#FF3366]/10 flex flex-col items-center justify-center p-4 text-center z-10 select-none">
-                    <span className="text-[10px] text-[#FF3366] font-mono tracking-widest uppercase font-bold animate-pulse">// SYSTEM_IMG_OFFLINE</span>
+                    <span className="text-xs font-semibold tracking-wider text-[#FF3366] font-mono tracking-widest uppercase font-bold animate-pulse">// SYSTEM_IMG_OFFLINE</span>
                     <span className="text-[9px] text-neutral-500 font-mono mt-1">USING DESIGN BLUEPRINT MODE</span>
                   </div>
                 ) : (
@@ -260,7 +260,7 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
 
                 {dumplingError ? (
                   <div className="absolute inset-0 bg-neutral-950 border border-[#FF3366]/10 flex flex-col items-center justify-center p-4 text-center z-10 select-none">
-                    <span className="text-[10px] text-[#FF3366] font-mono tracking-widest uppercase font-bold animate-pulse">// STEAM_MATRIX_OFFLINE</span>
+                    <span className="text-xs font-semibold tracking-wider text-[#FF3366] font-mono tracking-widest uppercase font-bold animate-pulse">// STEAM_MATRIX_OFFLINE</span>
                     <span className="text-[9px] text-neutral-500 font-mono mt-1">USING DECRYPTED DIAGRAM</span>
                   </div>
                 ) : (
@@ -327,7 +327,7 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
                   </span>
                 </div>
 
-                <p className="text-[11px] text-neutral-400 font-sans leading-relaxed">
+                <p className="text-xs font-semibold text-neutral-400 font-sans leading-relaxed">
                   Infused with black truffle oil extracts, wrapped in electric crimson beets wrapper, and loaded with dry-aged heritage pork belly.
                 </p>
 
@@ -381,7 +381,7 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
                   <p className="text-xs font-mono text-neutral-400 font-bold">香脆油炸蓮藕片</p>
                 </div>
 
-                <p className="text-[11px] text-neutral-400 font-sans leading-relaxed">
+                <p className="text-xs font-semibold text-neutral-400 font-sans leading-relaxed">
                   Ultra-thinly sliced organic lotus roots fried in pure flash peanut oil. Generously dusted with high-octane dried szechuan chili hulls and high-purity volcanic salt.
                 </p>
 
@@ -406,7 +406,7 @@ export default function AsymmetricMenuGrid({ onSelectItem, activeSelections = []
               {/* Grid Pricing with no image footer */}
               <div className="space-y-3 pt-4 mt-6 border-t border-white/5">
                 <div className="flex justify-between items-baseline">
-                  <span className="text-[10px] text-neutral-500 font-mono">DISH DROP COST INDEX</span>
+                  <span className="text-xs font-semibold tracking-wider text-neutral-500 font-mono">DISH DROP COST INDEX</span>
                   <span className="font-mono text-base font-black text-[#FF3366]">
                     ¥82 <span className="text-[9px] text-neutral-500 font-normal">($12.00)</span>
                   </span>

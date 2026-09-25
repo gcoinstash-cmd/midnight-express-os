@@ -51,7 +51,7 @@ export default function ChassisProfileSelector({
   return (
     <div className="space-y-3 select-none">
       <div>
-        <span className="text-[10px] text-neutral-400 font-mono tracking-widest block mb-1">
+        <span className="text-xs font-semibold tracking-wider text-neutral-400 font-mono tracking-widest block mb-1">
           02 // CHASSIS COEFFICIENT SELECT
         </span>
         <h3 className="font-display font-medium text-xs text-white uppercase tracking-wider">
@@ -97,7 +97,7 @@ export default function ChassisProfileSelector({
                 )}
               </div>
               
-              <span className="font-display font-medium text-[11px] text-white tracking-tight uppercase block text-center">
+              <span className="font-display font-medium text-xs font-semibold text-white tracking-tight uppercase block text-center">
                 {prof}
               </span>
               {isSelected && (
@@ -108,7 +108,7 @@ export default function ChassisProfileSelector({
         })}
       </div>
       
-      <div className="text-[10px] font-mono text-neutral-500 flex justify-between pr-1">
+      <div className="text-xs font-semibold tracking-wider font-mono text-neutral-500 flex justify-between pr-1">
         <span>WEIGHT CLASS MOD: {getWeightMultiplier(selectedProfile)}</span>
         <span>GAP OFFSET STALL</span>
       </div>

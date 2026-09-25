@@ -40,7 +40,7 @@ export default function ConfigurationPanel({ config, onChange }: ConfigurationPa
 
       {/* Vehicle class selection */}
       <div className="space-y-2">
-        <label className="text-[10px] font-mono text-neutral-400 tracking-wider uppercase block">
+        <label className="text-sm font-semibold tracking-wider font-mono text-neutral-400 tracking-wider uppercase block">
           01 // VEHICLE INTENTION SYSTEM
         </label>
         <div className="grid grid-cols-2 gap-2">
@@ -73,7 +73,7 @@ export default function ConfigurationPanel({ config, onChange }: ConfigurationPa
 
       {/* Szechuan engine injection presets */}
       <div className="space-y-2">
-        <label className="text-[10px] font-mono text-neutral-400 tracking-wider uppercase block">
+        <label className="text-sm font-semibold tracking-wider font-mono text-neutral-400 tracking-wider uppercase block">
           02 // SPICE FUEL INTEGRATION MODES
         </label>
         <div className="space-y-1.5">
@@ -90,7 +90,7 @@ export default function ConfigurationPanel({ config, onChange }: ConfigurationPa
                 }`}
               >
                 <div>
-                  <div className="font-display font-bold text-[11px] text-white">
+                  <div className="font-display font-bold text-xs font-semibold text-white">
                     {bp.name}
                   </div>
                   <div className="text-[9px] text-neutral-500 font-mono">
@@ -98,7 +98,7 @@ export default function ConfigurationPanel({ config, onChange }: ConfigurationPa
                   </div>
                 </div>
                 <div className="text-right shrink-0">
-                  <span className={`text-[10px] font-mono ${isSelected ? 'text-[#FF3366]' : 'text-neutral-400'}`}>
+                  <span className={`text-xs font-semibold tracking-wider font-mono ${isSelected ? 'text-[#FF3366]' : 'text-neutral-400'}`}>
                     {bp.addTime < 0 ? `${bp.addTime}S` : 'N/A'}
                   </span>
                 </div>
@@ -114,7 +114,7 @@ export default function ConfigurationPanel({ config, onChange }: ConfigurationPa
       {/* Wok temperature slider */}
       <div className="space-y-2">
         <div className="flex justify-between items-center">
-          <label className="text-[10px] font-mono text-neutral-400 tracking-wider uppercase block">
+          <label className="text-sm font-semibold tracking-wider font-mono text-neutral-400 tracking-wider uppercase block">
             03 // FLASH WOK METRIC TEMPERATURE
           </label>
           <span className="text-xs font-mono text-[#FF3366] font-bold">

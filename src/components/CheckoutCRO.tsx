@@ -296,7 +296,7 @@ export default function CheckoutCRO({
                 <div className="bg-[#121212]/80 border border-white/5 p-6 space-y-5 flex-1 flex flex-col justify-between">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center border-b border-white/5 pb-2">
-                      <span className="font-mono text-[10px] text-neutral-400 tracking-wider">
+                      <span className="font-mono text-xs font-semibold tracking-wider text-neutral-400 tracking-wider">
                         01 / SELECTED CULINARY PROVISIONS
                       </span>
                       <span className="font-mono text-[9px] text-[#FF3366] font-bold">
@@ -471,7 +471,7 @@ export default function CheckoutCRO({
                     id="authorize-terminal-master-buttons"
                     onClick={startValidationSequence}
                     disabled={selectedItems.length === 0}
-                    className={`w-full group relative py-4 px-6 bg-gradient-to-r from-[#FF3366] to-[#E62255] cursor-pointer text-white font-display font-black text-xs md:text-sm tracking-widest text-center uppercase select-none transition-all duration-300 shadow-[0_5px_30px_rgba(255,51,102,0.2)] hover:shadow-[0_8px_45px_rgba(255,51,102,0.4)] border-none ${
+                    className={`w-full group relative py-4 px-6 bg-gradient-to-r from-[#FF3366] to-[#E62255] cursor-pointer text-white font-display font-black text-base font-semibold tracking-widest text-center uppercase select-none transition-all duration-300 shadow-[0_5px_30px_rgba(255,51,102,0.2)] hover:shadow-[0_8px_45px_rgba(255,51,102,0.4)] border-none ${
                       selectedItems.length === 0 ? 'opacity-45 cursor-not-allowed' : ''
                     }`}
                   >
@@ -541,7 +541,7 @@ export default function CheckoutCRO({
                 </span>
                 <span className="font-mono text-4xl md:text-5xl font-black text-white tracking-tighter mt-1 relative">
                   {progress}%
-                  <span className="text-[10px] text-[#FF3366] font-bold absolute -top-1 -right-4">
+                  <span className="text-xs font-semibold tracking-wider text-[#FF3366] font-bold absolute -top-1 -right-4">
                     TX
                   </span>
                 </span>
@@ -630,7 +630,7 @@ export default function CheckoutCRO({
                 <div className="text-[9px] text-neutral-600 mt-1 uppercase tracking-widest">
                   SECTOR CULINARY REPLICATOR LANE 01 // TOKYO
                 </div>
-                <div className="text-[10px] text-white bg-black font-black uppercase inline-block px-2 py-0.5 mt-2 tracking-widest">
+                <div className="text-xs font-semibold tracking-wider text-white bg-black font-black uppercase inline-block px-2 py-0.5 mt-2 tracking-widest">
                   DESPATCH AUTHORIZED
                 </div>
               </div>
@@ -683,7 +683,7 @@ export default function CheckoutCRO({
                   const item = MENU_ITEMS.find((m) => m.id === id);
                   if (!item) return null;
                   return (
-                    <div key={item.id} className="flex justify-between items-baseline text-stone-900 text-[11px]">
+                    <div key={item.id} className="flex justify-between items-baseline text-stone-900 text-xs font-semibold">
                       <span className="font-sans font-bold uppercase truncate pr-4">
                         1x {item.name}
                       </span>
@@ -696,7 +696,7 @@ export default function CheckoutCRO({
 
                 {/* CRO enhancements printed as real line items */}
                 {addChiliInfusion && (
-                  <div className="flex justify-between items-baseline text-[#FF3366] text-[11px]">
+                  <div className="flex justify-between items-baseline text-[#FF3366] text-xs font-semibold">
                     <span className="font-sans font-bold uppercase pr-4">
                       + CHILI CRISP INFUSION CR-03
                     </span>
@@ -707,7 +707,7 @@ export default function CheckoutCRO({
                 )}
 
                 {addPuerhTea && (
-                  <div className="flex justify-between items-baseline text-indigo-700 text-[11px]">
+                  <div className="flex justify-between items-baseline text-indigo-700 text-xs font-semibold">
                     <span className="font-sans font-bold uppercase pr-4">
                       + VINTAGE PU-ERH TEA PAIRING
                     </span>
@@ -718,7 +718,7 @@ export default function CheckoutCRO({
                 )}
 
                 {config.lanePriority && (
-                  <div className="flex justify-between items-baseline text-neutral-800 text-[11px]">
+                  <div className="flex justify-between items-baseline text-neutral-800 text-xs font-semibold">
                     <span className="font-sans uppercase pr-4">
                       + OVERDRIVE PRIORITY FEE
                     </span>
@@ -731,7 +731,7 @@ export default function CheckoutCRO({
 
               {/* Pricing Terminal aggregate totals */}
               <div className="py-4 space-y-1">
-                <div className="flex justify-between items-baseline text-neutral-600 text-[10px]">
+                <div className="flex justify-between items-baseline text-neutral-600 text-xs font-semibold tracking-wider">
                   <span>SUBTOTAL VALUE</span>
                   <span>¥{totalYuan}</span>
                 </div>
@@ -779,7 +779,7 @@ export default function CheckoutCRO({
               
               <button
                 onClick={handlePrintSimulation}
-                className="w-full py-3 bg-[#111] hover:bg-neutral-800 text-white font-mono text-xs uppercase tracking-widest border border-white/10 flex items-center justify-center gap-2 cursor-pointer transition-colors"
+                className="w-full py-3 bg-[#111] hover:bg-neutral-800 text-white font-mono text-base font-semibold min-h-[44px] uppercase tracking-widest border border-white/10 flex items-center justify-center gap-2 cursor-pointer transition-colors"
                 id="btn-print-receipt-simulate"
               >
                 <Printer className="w-4 h-4 text-[#00FF66]" />
